@@ -25,12 +25,26 @@
 
 
   <servers>
-  
+  <server>
+      <id>maven-snapshots</id>
+      <username>admin</username>
+      <password>admin</password>
+    </server>
+    <server>
+      <id>maven-releases</id>
+      <username>admin</username>
+      <password>admin</password>
+    </server>
   </servers>
 
  
   <mirrors>
-   
+    <mirror>
+      <id>central</id>
+      <name>central</name>
+      <url>http://ec2-52-66-198-94.ap-south-1.compute.amazonaws.com:8081/repository/maven-group/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
   </mirrors>
 
  
